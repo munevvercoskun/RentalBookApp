@@ -1,0 +1,398 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 11, 2022, 7:57:55 PM
+    Author     : Andrej Zivkovic, Benjamin Fredette, Munevver Coskun, Sepehr Safa
+*/
+.label{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+}
+.loginButton{
+    -fx-background-color: 
+        #CDCDCD;
+    -fx-background-radius: 5 5 15 15;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+.loginButton:hover{
+    -fx-background-color: 
+        #B9B9B9;
+    -fx-background-radius: 5 5 15 15;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.loginUserNTXTField{
+    -fx-background-color: 
+        #CDCDCD;
+    -fx-background-radius: 0 5 0 0;
+    -fx-padding: 10 10 10 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+.loginUserNTXTField:focused{
+    -fx-background-color: 
+        #949292;
+    -fx-border-color: 
+        #6F91FF;
+    -fx-background-radius: 0 5 0 0;
+    -fx-border-radius: 0 5 0 0;
+    -fx-border-width: 2px;
+    -fx-padding: 8 8 8 8;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-background-color: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+
+.loginPassTXTField{
+    -fx-background-color: 
+        #CDCDCD;
+    -fx-background-radius: 0 0 5 0;
+    -fx-padding: 10 10 10 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+.loginPassTXTField:focused{
+    -fx-background-color: 
+        #949292;
+    -fx-border-color: 
+        #6F91FF;
+    -fx-background-radius: 0 0 5 0;
+    -fx-border-radius: 0 0 5 0;
+    -fx-border-width: 2px;
+    -fx-padding: 8 8 8 8;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-background-color: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+
+.loginUserLabel{
+    -fx-background-color: 
+        #CDCDCD;;
+    -fx-border-color: 
+        #CDCDCD;
+    -fx-background-radius: 5 0 0 0;
+    -fx-border-radius: 5 0 0 0;
+    -fx-padding: 10 10 8 8;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+.loginPassLabel{
+    -fx-background-color: 
+        #CDCDCD;;
+    -fx-border-color: 
+        #CDCDCD;
+    -fx-background-radius: 0 0 0 5;
+    -fx-border-radius: 0 0 0 5;
+    -fx-padding: 10 10 8 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+
+.ownerBooksButton{
+    -fx-background-color: 
+        #87ABCA;
+    -fx-background-radius: 30 30 0 0;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(102, 156, 201, 1), 0, 20, 50, 0);
+}
+.ownerBooksButton:hover{
+    -fx-background-color: 
+        #87ABCA;
+    -fx-background-radius: 30 30 0 0;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(102, 156, 201, 1), 0, 20, 40, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.ownerCustomersButton{
+    -fx-background-color: 
+        #93CABA;
+    -fx-background-radius: 0 0 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(111, 200, 174, 1), 0, 20, 50, 0);
+}
+.ownerCustomersButton:hover{
+    -fx-background-color: 
+        #93CABA;
+    -fx-background-radius: 0 0 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(111, 200, 174, 1), 0, 20, 40, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.logOutButton{
+    -fx-background-color: 
+        #CA9393;
+    -fx-background-radius: 30 30 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(219, 61, 61, 1), 0, 20, 50, 0);
+}
+.logOutButton:hover{
+    -fx-background-color: 
+        #CA9393;
+    -fx-background-radius: 30 30 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(219, 61, 61, 1), 0, 20, 40, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.addNameTXTField{
+    -fx-background-color: 
+        #BBCABB;
+    -fx-background-radius: 25 0 0 0;
+    -fx-padding: 10 10 10 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #003E01;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+.addNameTXTField:focused{
+    -fx-background-color: 
+        #BBCABB;
+    -fx-border-color: 
+        #95C996;
+    -fx-background-radius: 25 0 0 0;
+    -fx-border-radius: 25 0 0 0;
+    -fx-border-width: 4px;
+    -fx-padding: 6 6 6 6;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-background-color: #000000;
+    -fx-prompt-text-fill: #003E01;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+
+.addPxxxTXTField{
+    -fx-background-color: 
+        #BBCABB;
+    -fx-background-radius: 0 25 0 0;
+    -fx-padding: 10 10 10 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #003E01;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+.addPxxxTXTField:focused{
+    -fx-background-color: 
+        #BBCABB;
+    -fx-border-color: 
+        #95C996;
+    -fx-background-radius: 0 25 0 0;
+    -fx-border-radius: 0 25 0 0;
+    -fx-border-width: 4px;
+    -fx-padding: 6 6 6 6;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-text-background-color: #000000;
+    -fx-prompt-text-fill: #003E01;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+}
+
+.addButton{
+    -fx-background-color: 
+        #BBCABB;
+    -fx-background-radius: 0 0 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(149, 201, 150, 1), 0, 10, 20, 0);
+}
+.addButton:hover{
+    -fx-background-color: 
+        #BBCABB;
+    -fx-background-radius: 0 0 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(149, 201, 150, 1), 0, 10, 15, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.deleteButton{
+    -fx-background-color: 
+        #C7BAA4;
+    -fx-background-radius: 30 30 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(194, 167, 121, 1), 0, 10, 20, 0);
+}
+.deleteButton:hover{
+    -fx-background-color: 
+        #C7BAA4;
+    -fx-background-radius: 30 30 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(194, 167, 121, 1), 0, 10, 15, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.backButton{
+    -fx-background-color: 
+        #CA9393;
+    -fx-background-radius: 30 30 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(219, 61, 61, 1), 0, 10, 20, 0);
+}
+.backButton:hover{
+    -fx-background-color: 
+        #CA9393;
+    -fx-background-radius: 30 30 30 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(219, 61, 61, 1), 0, 10, 15, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.buyButton{
+    -fx-background-color: 
+        #8CA1C8;
+    -fx-background-radius: 30 0 0 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(108, 140, 199, 1), 0, 10, 20, 0);
+}
+.buyButton:hover{
+    -fx-background-color: 
+        #8CA1C8;
+    -fx-background-radius: 30 0 0 30;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(108, 140, 199, 1), 0, 10, 15, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.buyPointsButton{
+    -fx-background-color: 
+        #8CA1C8;
+    -fx-background-radius: 0 30 30 0;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(108, 140, 199, 1), 0, -10, -20, 0);
+}
+.buyPointsButton:hover{
+    -fx-background-color: 
+        #8CA1C8;
+    -fx-background-radius: 0 30 30 0;
+    -fx-padding: 10 10 5 10;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-alignment:CENTER;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow(three-pass-box, rgba(108, 140, 199, 1), 0, -10, -15, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#customerTable .table-column {
+  -fx-alignment: CENTER-RIGHT;
+}
